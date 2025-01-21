@@ -1,0 +1,151 @@
+.Quicksand{
+     font-family: Quicksand;  
+    padding-left: 60px;
+    padding-right: 60px;  
+    margin: 10px 0px;
+    max-width: 100%;
+    height: auto; 
+
+}
+.mobile-only{
+    display: none;
+}
+.banner{
+    background-image: url("assets/bg.png"); 
+}
+
+.nav-item{
+display: flex;
+gap:5px;
+} 
+.scl{
+    color: rgb(17, 17, 17);
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 18px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+} 
+.nav-link{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+}
+.nav-item1{
+    color: rgb(254, 163, 1);
+    
+}
+.nav-item2{
+    color:rgb(1, 172, 253);
+}
+.nav-item3{
+    color:rgb(5, 212, 223);
+}
+.nav-item4{
+    color:rgb(93, 88, 239);
+}
+.menu{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    
+}
+.btn{
+    color: rgb(255, 255, 255);
+    border-radius: 14px;
+    background: rgb(254, 163, 1);
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px;
+    width: 160px;
+    height: 45px;
+    border: none;
+    
+}
+.enrol{
+    width: 190px;
+    height: 50px; 
+    border: none;
+    gap: 10;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    border-radius: 12px;
+    background: rgb(17, 17, 17);
+}
+#id1{
+
+    font-size: 50px;
+}
+.desc{
+font-size: 16px;
+color: rgb(17, 17, 17);
+font-weight: 400;
+}
+.text{
+margin-top: 100px;
+width: 450px;
+height: auto 331px;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+
+}
+.img{
+    margin-left: 50px; 
+}
+/* media query for small device */
+@media screen and (max-width:576px) {
+    .navbar{
+        display: flex;
+        box-sizing: border-box;
+        border: 0.5px solid rgb(254, 163, 1);
+        position: absolute;    
+        width: 880px;
+        height: 90px;
+        left: 0;
+        top: 0;
+
+
+    }
+    .scl{
+        visibility: hidden;
+    }
+    .menu{
+        visibility: hidden;
+    }
+    .btn{
+        visibility: hidden;
+    }
+    .content{
+        margin-top: 150px;
+        flex-direction: column-reverse;
+        text-align: center; 
+        padding-left: 100px ;
+        
+    }
+    .text{
+        margin-top: 0%;   
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+
+    }
+    .mobile-only{
+        display: block;
+        
+
+    }
+
+    
+}
+
+
