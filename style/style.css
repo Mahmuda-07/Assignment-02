@@ -5,13 +5,11 @@
     margin: 10px 0px;
     max-width: 100%;
     height: auto; 
+   
 
 }
 .mobile-only{
     display: none;
-}
-.banner{
-    background-image: url("assets/bg.png"); 
 }
 
 .nav-item{
@@ -107,11 +105,13 @@ height: auto 331px;
         display: flex;
         box-sizing: border-box;
         border: 0.5px solid rgb(254, 163, 1);
-        position: absolute;    
-        width: 880px;
-        height: 90px;
+        position: absolute; 
+        position: absolute;
+        width: 870px;
+        right: 0;
+        height: 90px;  
         left: 0;
-        top: 0;
+        top: 0; 
 
 
     }
@@ -125,10 +125,13 @@ height: auto 331px;
         visibility: hidden;
     }
     .content{
-        margin-top: 150px;
+         margin-top: 150px;
         flex-direction: column-reverse;
-        text-align: center; 
-        padding-left: 100px ;
+        text-align: center;
+         padding-left: 120px; 
+        
+        
+         
         
     }
     .text{
@@ -136,6 +139,7 @@ height: auto 331px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding-left: 60px;
         
 
     }
@@ -143,9 +147,138 @@ height: auto 331px;
         display: block;
         
 
-    }
-
+    } 
+}
+/* Standard Curriculum section */
+.section-titel{
+    color: rgb(0, 0, 0);
+    text-align:center;
+    font-size: 40px;
+    font-weight: 700;
+    gap: 80;
+    padding: 60px 0px 60px 0px;
+}
+.titel{
+    font-size: 24.52px;
+    font-weight: 700;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.description{
+    color: rgb(128, 128, 128);
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.container{
+    display: flex;
+}
+.image{
     
+    padding: 40px 80px;
+}
+.co-item1{
+     width: 370px;
+    height: 480px; 
+    box-sizing: border-box;
+    border: 0.94px solid rgb(222, 245, 255);
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+.co-item2{
+    margin-left: 50px;
+    margin-right: 50px;
+     width: 360px;
+    height: 480px; 
+    box-sizing: border-box;
+border: 0.94px solid rgb(255, 244, 220);
+border-radius: 18.86px;
+
+box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+background: linear-gradient(180.00deg, rgb(255, 244, 220),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+.co-item3{
+     width: 360px;
+    height: 480px; 
+    box-sizing: border-box;
+    box-sizing: border-box;
+    border: 0.94px solid rgb(242, 232, 255);
+     border-radius: 18.86px;
+     box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+.read1{
+font-size: 18px;
+font-weight: 700;
+text-align: center;
+color:rgb(100, 200, 255)
+
+}
+.read2{
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    color: rgb(240, 170, 0); 
+}
+.read3{
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    color: rgb(135, 0, 255);
 }
 
+.button{
+display: flex;
 
+flex-direction: row;
+justify-content:center;
+align-items: center;
+gap: 80;
+padding: 60px 0px 60px 0px;
+}
+.arrow{
+    color: rgb(255, 255, 255);
+     font-size: 20px;
+     font-weight: 900;
+     border: none;
+     width: 60px;
+     height: 60px;
+     border-radius: 30px;
+     background: rgb(254, 163, 1);
+}
+.right-arrow{
+    margin-left: 10px;
+}
+/* media query */
+@media screen and (max-width:576px){
+    
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;  
+        text-align: center;
+        padding-left: 370px;
+        left: 0;
+        
+    }
+    .section-titel{
+       padding-left: 220px;
+       margin-bottom: 15px;
+       text-align: center;
+       width: 400px;
+       height: 33px;
+    }
+    .co-item2{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .button{
+       visibility: hidden;
+    }
+    
+
+}
